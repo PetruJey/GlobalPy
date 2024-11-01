@@ -13,14 +13,17 @@ class Guia:
 
 Si desea volver presione 1, si desea salir del programa pulse 0:
             """)
-        choice = int(input())
-        match choice:
-            case 0:
-                print("Gracias por utilizar nuestro programa, Hasta Luego!.")
-                pass
-            case 1:
-                print("Volviendo al menu princial.")
-                MenuPrincipal()
-            case other:
-                print("Elige una opcion en pantalla.")
-                Guia()
+        Seleccion()
+        
+class Seleccion(MenuPrincipal):
+    choice = int(input())
+    match choice:
+        case 0:
+            print("Gracias por utilizar nuestro programa, Hasta Luego!.")
+            pass
+        case 1:
+            print("Volviendo al menu princial.")
+            MenuPrincipal()
+        case other:
+            print("Elige una opcion en pantalla.")
+            Guia()
