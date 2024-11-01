@@ -1,4 +1,3 @@
-from datos import *
 class Detector:
     #def __init__(self):
     #def detectar_mutantes(self):
