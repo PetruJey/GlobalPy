@@ -1,3 +1,4 @@
+from ejecutable import adn_list
 class Detector:
     #def __init__(self):
     #def detectar_mutantes(self):
