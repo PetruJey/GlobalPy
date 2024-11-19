@@ -11,6 +11,7 @@ def guia():
       C T G T T C - Fila 6
           """)
     example = str(input("Presione una Enter para continuar..."))
+    
 def verificar_adn(value):
     bases_nitrogenadas = ("A", "G", "T", "C") 
     if len(value) != 6:  
@@ -25,22 +26,31 @@ def verificar_adn(value):
     return True 
     
 def ingresar_adn(adn):
+    i = 0
     posiciones_list = ("la primera", "la segunda", "la tercera", "la cuarta", "la quinta", "la sexta")
     if not adn:
-      for i in range (0, 6):
-        value = input(f"Ingrese {posiciones_list[i]} fila de su ADN:")
-        if verificar_adn(value):
-           adn.append(value.upper())
-        else:
-           print("Fila inválida, Ingrese de nuevo.")
-           break
-        
+        while i < 6:
+            value = input(f"Ingrese {posiciones_list[i]} fila de su ADN: ")
+            value = value.upper()
+            if verificar_adn(value):
+                adn.append(list(value))  # Guardar como lista de caracteres
+                i += 1
+            else:
+                print("Fila inválida, Ingrese de nuevo.")
     else:
-      example = str(input("Ya existe un ADN guardado, desea borrarlo?\n1 - Si\n2 - No\n"))
-      if example == "1":
-        adn.clear()
-      else:
-          print("Volviendo al Menu...")
-          
-    print(f"ADN:", adn)
-    example = str(input("Presione una Enter para continuar..."))
+        example = str(input("Ya existe un ADN guardado, desea borrarlo?\n1 - Si\n2 - No\n"))
+        if example == "1":
+            adn.clear()
+        else:
+            print("Volviendo al Menu...")
+    try:
+        print(f"""ADN:
+          {adn[0]}
+          {adn[1]}
+          {adn[2]}
+          {adn[3]}
+          {adn[4]}
+          {adn[5]}""")
+    except IndexError:
+        print(f"ADN", adn)
+    input("Presione Enter para continuar...")
