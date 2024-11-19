@@ -1,1 +1,6 @@
-# ADN Project Python
+**ADN Project Python**
+======================
+> ### Integrantes
+> - Jeremias Montiel
+> - Pablo Vivas
+> - Bruno Racconto
