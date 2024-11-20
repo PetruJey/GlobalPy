@@ -15,6 +15,7 @@ Este programa evalúa secuencias de ADN organizadas en una matriz de 6x6 para id
 
 ### Instrucciones
 **1** - Se ejecuta el archivo "ejecutable.py".
+
 **2** - Una vez inicializado se mostrará en pantalla un menú del cual se ingresará la opción deseada numéricamente.
 
 ```
