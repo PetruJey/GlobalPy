@@ -7,6 +7,7 @@ Este programa evalúa secuencias de ADN organizadas en una matriz de 6x6 para id
 - Guanina (G).
 <p align = "center">
 <img src="https://cdn.icon-icons.com/icons2/609/PNG/512/dna_icon-icons.com_56352.png" width="200" height="300" />
+
 > ### Integrantes - Comisión 3
 > - Jeremias Montiel
 > - Pablo Vivas
