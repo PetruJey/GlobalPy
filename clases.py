@@ -21,7 +21,7 @@ class Detector: # Clase encargada de detectar mutaciones
                 if cadena[j] == cadena[j+1] == cadena[j+2] == cadena[j+3]:
                     self.mutacion_horizontal += 1
                     self.mutacion = True
-                    print(f"Mutación horizontal encontrada en la fila {i+1} posición {j}-{j+3}")
+                    print(f"Mutación horizontal encontrada en la fila {i+1} posición {j+1}-{j+4}")
                     break  # Sale si encuentra la primera mutación de la fila
 
     def detectar_mutantes_vertical(self):
@@ -30,7 +30,7 @@ class Detector: # Clase encargada de detectar mutaciones
                 if (self.adn_list[i][j] == self.adn_list[i+1][j] == self.adn_list[i+2][j] == self.adn_list[i+3][j]):
                     self.mutacion_vertical += 1
                     self.mutacion = True
-                    print(f"Mutación vertical encontrada en la columna {j+1} posición {i}-{i+3}")
+                    print(f"Mutación vertical encontrada en la columna {j+1} posición {i+1}-{i+4}")
                     break
 
     def detectar_mutantes_diagonal(self):
