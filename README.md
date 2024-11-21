@@ -7,6 +7,7 @@ Este programa evalúa secuencias de ADN organizadas en una matriz de 6x6 para id
 - Guanina (G).
 <p align = "center">
 <img src="https://cdn.icon-icons.com/icons2/609/PNG/512/dna_icon-icons.com_56352.png" width="200" height="300" />
+
 > ### Integrantes - Comisión 3
 > - Jeremias Montiel
 > - Pablo Vivas
@@ -14,6 +15,7 @@ Este programa evalúa secuencias de ADN organizadas en una matriz de 6x6 para id
 
 ### Instrucciones
 **1** - Se ejecuta el archivo "ejecutable.py".
+
 **2** - Una vez inicializado se mostrará en pantalla un menú del cual se ingresará la opción deseada numéricamente.
 
 ```
