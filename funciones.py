@@ -10,7 +10,7 @@ def guia():
       A T T G C G - Fila 5
       C T G T T C - Fila 6
           """)
-    example = str(input("Presione una Enter para continuar..."))
+    input("Presione Enter para continuar...")
     
 def verificar_adn(value):
     bases_nitrogenadas = ("A", "G", "T", "C") 

@@ -25,9 +25,11 @@ Este programa evalúa secuencias de ADN organizadas en una matriz de 6x6 para id
         5) Sanador
         0) Salir del programa
 ```
+
 ***
 ####  **1) Guía**
 - Presionando la tecla **"1"** se ilustrará un paso a paso de cómo introducir una secuencia de ADN.
+
 ```
 	-La secuencia del ADN se ingresa de izquierda a derecha.
 	-El ADN elegido se ingresa por filas (con 6 bases nitrogenadas por fila.).
@@ -40,9 +42,11 @@ Este programa evalúa secuencias de ADN organizadas en una matriz de 6x6 para id
 
 	Presione una Enter para continuar...
 ```
+
 ***
 #### **2) Ingresar ADN**
 - Presionando la tecla **"2"** el programa solicitará la secuencia de ADN del Usuario, para ser ingresada fila por fila, la cual se mostrará en pantalla al finalizar el ingreso de la misma.
+
 ```
 Ingrese la primera fila de su ADN: actgca
 Ingrese la segunda fila de su ADN: tagcta
@@ -59,13 +63,15 @@ ADN:
           ['T', 'G', 'T', 'C', 'T', 'A']
 Presione Enter para continuar...
 ```
+
 ***
 #### **3) Detector de Mutaciones**
 - Presionando la tecla **"3"** se iniciará el proceso de detección de mutaciones, cuyo proceso analizará si se halla una mutación de manera Horizontal, Vertical o Diagonal, e indicará su ubicación en la matriz.
+
 ```
 Analizando ADN...
-Mutación vertical encontrada en la columna 3 posición 1-4
-Mutación vertical encontrada en la columna 5 posición 0-3
+Mutación vertical encontrada en la columna 4 posición 1-4
+Mutación vertical encontrada en la columna 6 posición 0-3
 Análisis completado.
 Hay mutacion?: True
 Número de mutaciones horizontales: 0
@@ -73,9 +79,64 @@ Número de mutaciones verticales: 2
 Número de mutaciones en diagonales: 0
 Presione Enter para continuar...
 ```
+
 ***
+#### **4) Mutador**
+- Presionando la tecla **"4"**  el programa dará a elegir al Usuario que tipo de mutación desea realizar.
 
+```
+Bienvenido al Mutador de ADN
 
+            ¿Que tipo de mutacion desea realizar?
+            1) Radiacion
+            2) Virus
+            0) Volver al menu principal
+```
 
+> ##### **"1) Radiacion"**
+> - Al seleccionar Radiacion, ésta creará mutantes únicamente de manera Horizontal o Vertical.
+>
+>```
+>Iniciando mutaciones con radiación
+>Mutaciones completadas.
+>ADN:
+>          ['A', 'C', 'T', 'G', 'C', 'A']
+>          ['T', 'A', 'G', 'C', 'T', 'A']
+>          ['G', 'T', 'A', 'C', 'G', 'A']
+>          ['T', 'A', 'G', 'C', 'T', 'A']
+>          ['A', 'A', 'A', 'C', 'G', 'T']
+>          ['T', 'G', 'T', 'C', 'T', 'A']
+>```
+>
+>***
+>##### **"2) Virus"**
+> - Al seleccionar Virus, éste creará mutantes únicamente en Diagonal.
+>
+>```
+>Iniciando mutaciones con virus
+>Mutaciones completadas.
+>ADN:
+>          ['A', 'C', 'T', 'G', 'C', 'A']
+>          ['T', 'A', 'G', 'C', 'T', 'A']
+>          ['G', 'T', 'A', 'C', 'G', 'A']
+>          ['T', 'A', 'G', 'A', 'T', 'A']
+>          ['T', 'A', 'C', 'C', 'A', 'T']
+>          ['T', 'G', 'T', 'C', 'T', 'A']
+>```
 
+***
+#### **5) Sanador**
 
+- Presionando la tecla **"5"** el programa analizará la matriz de ADN, si la matriz tiene una mutación generará cambios en la misma hasta que sane completamente.
+
+```
+ADN:
+      ['C', 'G', 'C', 'C', 'A', 'A']
+      ['C', 'G', 'C', 'T', 'A', 'A']
+      ['C', 'A', 'C', 'C', 'C', 'T']
+      ['T', 'G', 'G', 'T', 'A', 'A']
+      ['C', 'C', 'C', 'T', 'T', 'T']
+      ['C', 'A', 'G', 'A', 'A', 'G']
+Sanador completado.
+
+```
